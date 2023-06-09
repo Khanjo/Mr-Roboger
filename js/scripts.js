@@ -7,6 +7,8 @@ function roboOutput(number) {
     for (let i = 0; i <= number; i++) {
         if (i.toString().indexOf("3") !== -1) {
             numArray.splice(i, 1, three);
+        } else if (i.toString().indexOf("2") !== -1) {
+            numArray.splice(i, 1, two);
         } else {
             numArray.push(i);
         }
