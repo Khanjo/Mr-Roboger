@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color: rgb(51, 255, 51);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -19,13 +19,27 @@ form {
 }
 
 input {
+    background-color: rgb(40, 40, 40);
+    color: rgb(51, 255, 51);
+    border-style: outset;
+    border-color: rgb(51, 255, 51);
     font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+::placeholder {
+    color: rgb(51, 255, 51);
 }
 
 button {
+    background-color: rgb(40, 40, 40);
+    color: rgb(51, 255, 51);
+    border-style: outset;
+    border-color: rgb(51, 255, 51);
     font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #num {
-    width: 400px;
+    width: 520px;
 }
