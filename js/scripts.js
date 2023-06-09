@@ -16,5 +16,5 @@ function roboOutput(number) {
 //User Interface Logic
 
 window.addEventListener("load", function () {
-
+    let form = document.getElementById("num")
 })
