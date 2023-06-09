@@ -27,9 +27,8 @@ window.addEventListener("load", function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
         let input = parseInt(document.getElementById("num").value);
-        output.innerHTML = " ";
         roboOutput(input);
-        output.innerText = numArray
+        output.innerText = numArray;
         form.reset();
     });
 });
