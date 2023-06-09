@@ -1,10 +1,11 @@
 //Business Logic
 
+let numArray = [];
+
 function roboOutput(input) {
     let three = "won't you be my neighbor?";
     let two = "boop";
     let one = "beep";
-    let numArray = [];
     for (let i = 0; i <= input; i++) {
         if (i.toString().indexOf("3") !== -1) {
             numArray.splice(i, 1, three);
@@ -16,7 +17,6 @@ function roboOutput(input) {
             numArray.push(i);
         }
     };
-    console.log(numArray)
 };
 
 //User Interface Logic
@@ -24,10 +24,12 @@ function roboOutput(input) {
 window.addEventListener("load", function () {
     let form = document.querySelector("form");
     let output = document.getElementById("output")
-    let input = parseInt(document.getElementById("num").value);
     form.addEventListener("submit", function (event) {
         event.preventDefault();
+        let input = parseInt(document.getElementById("num").value);
+        output.innerHTML = " ";
         roboOutput(input);
+        output.innerText = numArray
         form.reset();
     });
 });
